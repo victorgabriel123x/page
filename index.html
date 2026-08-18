@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Lenha — cozinha de fogo de lenha</title>
+<meta name="description" content="Um salão de trinta e dois lugares em torno de uma grelha de lenha. Reserve sua mesa.">
+<meta name="theme-color" content="#16110F">
+
+<!-- ============================================================
+     OPEN GRAPH — troque a imagem quando as fotos chegarem
+     ============================================================ -->
+<meta property="og:title" content="Casa Lenha">
+<meta property="og:description" content="Um salão de trinta e dois lugares em torno de uma grelha de lenha.">
+<meta property="og:type" content="restaurant.restaurant">
+<!-- <meta property="og:image" content="assets/og.jpg"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Instrument+Sans:ital,wght@0,400..600;1,400&family=DM+Mono:wght@300;400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316110F'/%3E%3Ccircle cx='16' cy='19' r='7' fill='%23D2601A'/%3E%3Ccircle cx='16' cy='20' r='3' fill='%23FFD9A0'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="topbar">
+  <div class="topbar__in wrap">
+    <!-- ============================================================
+         LOGO — ponto de troca 1 de 2 (o outro está no rodapé).
+         Substitua o <a> inteiro por:
+         <a class="wordmark" href="#"><img src="assets/logo.svg" alt="Casa Lenha" height="28"></a>
+         ============================================================ -->
+    <a class="wordmark" href="#topo" aria-label="Casa Lenha, início">
+      <span class="wordmark__a">Casa</span><span class="wordmark__b">Lenha</span>
+    </a>
+
+    <nav class="nav" aria-label="Seções da página">
+      <a href="#casa">A casa</a>
+      <a href="#fogo">O fogo</a>
+      <a href="#salao">O salão</a>
+      <a href="#visite">Visite</a>
+    </nav>
+
+    <a class="btn btn--solid topbar__cta" href="#visite">Reservar mesa</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ========================== HERO ========================== -->
+  <section class="hero" id="topo">
+    <!-- ============================================================
+         VÍDEO DE FUNDO — descomente e aponte para o arquivo.
+         Enquanto não houver vídeo, o fundo de brasa em CSS assume.
+         <video class="hero__video" autoplay muted loop playsinline
+                poster="assets/hero-poster.jpg">
+           <source src="assets/hero.mp4" type="video/mp4">
+         </video>
+         ============================================================ -->
+    <div class="ember" aria-hidden="true"></div>
+
+    <div class="hero__in wrap">
+      <p class="status" id="status" role="status" aria-live="polite">
+        <span class="status__dot" aria-hidden="true"></span>
+        <span class="status__text" id="status-texto">Terça a domingo, a partir das 18h</span>
+      </p>
+
+      <h1 class="hero__title">Tudo aqui<br>passa pelo fogo.</h1>
+
+      <p class="hero__lede">
+        Trinta e dois lugares em volta de uma grelha de lenha que acende às cinco da tarde
+        e só apaga quando a última mesa levanta. Sem pressa e sem pirotecnia: brasa, tempo
+        e uma casa cheia.
+      </p>
+
+      <div class="hero__acts">
+        <a class="btn btn--solid" href="#visite">Reservar mesa</a>
+        <a class="btn btn--ghost" href="#salao">Ver o salão</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ========================== A CASA ========================== -->
+  <section class="section" id="casa">
+    <div class="wrap grid-2">
+      <div class="col-text">
+        <p class="eyebrow">17:00 · o fogo acende</p>
+        <h2 class="h2">Uma cozinha que trabalha em torno de uma coisa só</h2>
+        <p>
+          Duas horas antes de abrir, alguém acende a lenha e não sai de perto. O resto do
+          dia da cozinha se organiza em volta disso: o que entra cedo, o que espera a brasa
+          branca, o que só encosta no calor no fim da noite.
+        </p>
+        <p>
+          Não temos forno combinado nem plano B. Quando o fogo está no ponto errado, a
+          cozinha espera. É mais lento e é o motivo pelo qual você vai lembrar da refeição.
+        </p>
+        <dl class="facts">
+          <div><dt>Lugares</dt><dd>32</dd></div>
+          <div><dt>Desde</dt><dd>2019</dd></div>
+          <div><dt>Lenha</dt><dd>Eucalipto e goiabeira</dd></div>
+        </dl>
+      </div>
+
+      <!-- FOTO — substitua .slot__ph inteiro por <img src="..." alt="..."> -->
+      <figure class="slot slot--tall" data-slot="casa-fogo">
+        <div class="slot__ph" aria-hidden="true">
+          <span class="slot__label">foto · a grelha acesa</span>
+          <span class="slot__spec">vertical · 1200 × 1600</span>
+        </div>
+        <figcaption>A grelha por volta das cinco da tarde.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ========================== O FOGO (assinatura) ========================== -->
+  <section class="section section--fogo" id="fogo">
+    <div class="wrap">
+      <p class="eyebrow">18:30 · a brasa fica branca</p>
+      <h2 class="h2 h2--wide">A altura é o tempero</h2>
+      <p class="lede">
+        Numa cozinha de lenha não existe botão de temperatura. Existe distância. Cada palmo
+        acima da brasa é outro calor, e é assim que a casa decide onde cada coisa cozinha.
+      </p>
+
+      <ol class="ladder">
+        <li class="rung" style="--heat:.06">
+          <span class="rung__bar" aria-hidden="true"></span>
+          <span class="rung__dist">80 cm</span>
+          <span class="rung__temp">90 °C</span>
+          <div class="rung__body">
+            <h3>Defumar e descansar</h3>
+            <p>Quase só fumaça. O andar de cima da grelha guarda o que já está pronto.</p>
+          </div>
+        </li>
+        <li class="rung" style="--heat:.3">
+          <span class="rung__bar" aria-hidden="true"></span>
+          <span class="rung__dist">45 cm</span>
+          <span class="rung__temp">160 °C</span>
+          <div class="rung__body">
+            <h3>Terminar</h3>
+            <p>Calor de paciência, para o que precisa de meia hora e de ninguém olhando com pressa.</p>
+          </div>
+        </li>
+        <li class="rung" style="--heat:.62">
+          <span class="rung__bar" aria-hidden="true"></span>
+          <span class="rung__dist">20 cm</span>
+          <span class="rung__temp">240 °C</span>
+          <div class="rung__body">
+            <h3>Assar</h3>
+            <p>A altura de trabalho da casa. É onde a maior parte da noite acontece.</p>
+          </div>
+        </li>
+        <li class="rung" style="--heat:1">
+          <span class="rung__bar" aria-hidden="true"></span>
+          <span class="rung__dist">5 cm</span>
+          <span class="rung__temp">320 °C</span>
+          <div class="rung__body">
+            <h3>Selar</h3>
+            <p>Calor direto, contato de segundos. Fecha a superfície e devolve fumaça para dentro.</p>
+          </div>
+        </li>
+      </ol>
+
+      <p class="coals">
+        <span class="coals__bar" aria-hidden="true"></span>
+        <span class="coals__lbl">0 cm · a brasa · 620 °C</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================== O SALÃO ========================== -->
+  <section class="section" id="salao">
+    <div class="wrap">
+      <p class="eyebrow">19:00 · a casa abre</p>
+      <h2 class="h2">O salão</h2>
+      <p class="lede lede--short">
+        Uma sala só, sem divisórias. De qualquer mesa dá para ver a brasa e ouvir a cozinha.
+      </p>
+
+      <!-- GALERIA — 4 fotos. Substitua cada .slot__ph por <img src="..." alt="..."> -->
+      <div class="gallery">
+        <figure class="slot slot--a" data-slot="salao-01">
+          <div class="slot__ph" aria-hidden="true">
+            <span class="slot__label">foto · salão da entrada</span>
+            <span class="slot__spec">vertical · 1400 × 1900</span>
+          </div>
+        </figure>
+        <figure class="slot slot--b" data-slot="salao-02">
+          <div class="slot__ph" aria-hidden="true">
+            <span class="slot__label">foto · balcão da brasa</span>
+            <span class="slot__spec">horizontal · 1600 × 1100</span>
+          </div>
+        </figure>
+        <figure class="slot slot--c" data-slot="salao-03">
+          <div class="slot__ph" aria-hidden="true">
+            <span class="slot__label">foto · detalhe / mãos</span>
+            <span class="slot__spec">quadrada · 1200 × 1200</span>
+          </div>
+        </figure>
+        <figure class="slot slot--d" data-slot="salao-04">
+          <div class="slot__ph" aria-hidden="true">
+            <span class="slot__label">vídeo curto · a casa cheia</span>
+            <span class="slot__spec">horizontal · 1920 × 1080 · até 15s, mudo</span>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== OCASIÕES ========================== -->
+  <section class="section section--quiet" id="ocasioes">
+    <div class="wrap">
+      <p class="eyebrow">21:00 · a casa cheia</p>
+      <h2 class="h2">Como a casa recebe</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Mesa para dois</h3>
+          <p>As quatro mesas do fundo ficam de frente para a grelha. Peça no campo de observações da reserva.</p>
+          <a class="link" href="#visite">Reservar mesa<span aria-hidden="true"> →</span></a>
+        </article>
+        <article class="card">
+          <h3>Mesa grande, até 12</h3>
+          <p>A mesa comprida do centro serve grupos. Reservas de grupo saem por telefone, não pelo formulário.</p>
+          <a class="link" href="tel:+551100000000">Falar com a casa<span aria-hidden="true"> →</span></a>
+        </article>
+        <article class="card">
+          <h3>A casa inteira</h3>
+          <p>Fechamos o salão para eventos às segundas, quando a casa estaria fechada de todo jeito.</p>
+          <a class="link" href="mailto:eventos@casalenha.com.br">Pedir uma proposta<span aria-hidden="true"> →</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== VISITE ========================== -->
+  <section class="section section--visite" id="visite">
+    <div class="wrap grid-2 grid-2--visite">
+      <div class="col-text">
+        <p class="eyebrow">23:00 · último pedido</p>
+        <h2 class="h2">Visite a casa</h2>
+
+        <table class="hours">
+          <caption class="sr-only">Horários de funcionamento</caption>
+          <tbody>
+            <tr data-dias="1"><th scope="row">Segunda</th><td>Fechado</td></tr>
+            <tr data-dias="2,3,4"><th scope="row">Terça a quinta</th><td>18h — 23h</td></tr>
+            <tr data-dias="5,6"><th scope="row">Sexta e sábado</th><td>18h — 00h30</td></tr>
+            <tr data-dias="0"><th scope="row">Domingo</th><td>12h — 16h</td></tr>
+          </tbody>
+        </table>
+
+        <!-- ============================================================
+             CONTATO — troque endereço, telefone e e-mail reais aqui
+             ============================================================ -->
+        <address class="contact">
+          <p class="contact__addr">
+            Rua da Lenha, 000 — Vila Exemplo<br>
+            São Paulo, SP
+          </p>
+          <ul class="contact__list">
+            <li><a class="link link--quiet" href="tel:+551100000000">(11) 0000-0000</a></li>
+            <li><a class="link link--quiet" href="https://wa.me/5511000000000">WhatsApp da reserva</a></li>
+            <li><a class="link link--quiet" href="mailto:contato@casalenha.com.br">contato@casalenha.com.br</a></li>
+          </ul>
+        </address>
+
+        <a class="btn btn--solid" href="https://wa.me/5511000000000">Reservar mesa</a>
+        <p class="fineprint">Reservas até 12 pessoas pelo WhatsApp. Acima disso, por telefone.</p>
+      </div>
+
+      <!-- MAPA — substitua por um <iframe> do Google Maps ou uma imagem estática -->
+      <figure class="slot slot--map" data-slot="mapa">
+        <div class="slot__ph" aria-hidden="true">
+          <span class="slot__label">mapa · iframe ou imagem</span>
+          <span class="slot__spec">proporção 4:5</span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <!-- LOGO — ponto de troca 2 de 2 -->
+    <a class="wordmark wordmark--foot" href="#topo" aria-label="Casa Lenha, voltar ao topo">
+      <span class="wordmark__a">Casa</span><span class="wordmark__b">Lenha</span>
+    </a>
+
+    <nav class="foot__nav" aria-label="Rodapé">
+      <a href="#casa">A casa</a>
+      <a href="#fogo">O fogo</a>
+      <a href="#salao">O salão</a>
+      <a href="#ocasioes">Ocasiões</a>
+      <a href="#visite">Visite</a>
+    </nav>
+
+    <nav class="foot__social" aria-label="Redes sociais">
+      <a href="#">Instagram</a>
+      <a href="#">Google Maps</a>
+    </nav>
+
+    <p class="foot__legal">© <span id="ano">2026</span> Casa Lenha · Rua da Lenha, 000 · São Paulo</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
