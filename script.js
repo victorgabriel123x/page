@@ -107,7 +107,11 @@ function pintarEstado() {
   if (!caixa || !texto) return;
 
   var e = estadoDaCasa(new Date());
-  texto.textContent = e.texto;
+
+  // Só escreve quando a frase realmente muda. Reescrever o mesmo texto altera o
+  // DOM e faz a região viva (role="status") reanunciar a cada minuto sem motivo.
+  if (texto.textContent !== e.texto) texto.textContent = e.texto;
+
   caixa.style.setProperty("--heat", e.calor.toFixed(2));
   caixa.classList.toggle("is-open", e.aberto);
   caixa.classList.toggle("is-closed", !e.aberto);
@@ -131,12 +135,21 @@ function revelar() {
 
   if (reduzido || !("IntersectionObserver" in window)) return;
 
-  for (var i = 0; i < alvos.length; i++) alvos[i].classList.add("reveal");
+  // O atraso vem da posição do elemento dentro da própria seção, definido agora.
+  // Se ficasse a cargo do índice do lote do observer, dois elementos vizinhos
+  // receberiam o mesmo atraso e a sequência sairia embaralhada.
+  var porSecao = {};
+  for (var i = 0; i < alvos.length; i++) {
+    var secao = alvos[i].closest("section");
+    var chave = secao ? (secao.id || "sem-id") : "solto";
+    porSecao[chave] = (porSecao[chave] || 0) + 1;
+    alvos[i].classList.add("reveal");
+    alvos[i].style.setProperty("--d", Math.min(porSecao[chave] - 1, 5) * 40 + "ms");
+  }
 
   var observador = new IntersectionObserver(function (entradas) {
-    entradas.forEach(function (entrada, indice) {
+    entradas.forEach(function (entrada) {
       if (!entrada.isIntersecting) return;
-      entrada.target.style.setProperty("--d", Math.min(indice, 5) * 60 + "ms");
       entrada.target.classList.add("is-in");
       observador.unobserve(entrada.target);
     });
@@ -145,7 +158,19 @@ function revelar() {
   for (var j = 0; j < alvos.length; j++) observador.observe(alvos[j]);
 }
 
+/* Vídeo de fundo: quem pede movimento reduzido no sistema fica com o poster
+   parado. Não faz nada enquanto não houver vídeo no hero. */
+function acalmarVideo() {
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var videos = document.querySelectorAll(".hero__video");
+  for (var i = 0; i < videos.length; i++) {
+    videos[i].removeAttribute("autoplay");
+    videos[i].pause();
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  acalmarVideo();
   pintarEstado();
   setInterval(pintarEstado, 60000);
   marcarHoje();

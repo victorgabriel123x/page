@@ -62,12 +62,20 @@ dimensões sugeridas. **Troque o `div` inteiro por uma imagem:**
 
 ```html
 <figure class="slot slot--a" data-slot="salao-01">
-  <img src="assets/salao-01.jpg" alt="O salão visto da entrada, com a grelha ao fundo">
+  <img src="assets/salao-01.jpg" loading="lazy" decoding="async"
+       alt="O salão visto da entrada, com a grelha ao fundo">
 </figure>
 ```
 
 A proporção já está reservada no CSS, então a página não dá salto ao carregar.
-Para vídeo, use `<video muted loop playsinline poster="...">` no mesmo lugar.
+
+**Não esqueça o `loading="lazy"`**: todas essas fotos estão abaixo da dobra e
+não devem competir com o carregamento do topo da página. A única exceção é o
+poster do hero, que aparece de cara e deve carregar normalmente.
+
+Para vídeo, use `<video muted loop playsinline poster="..." preload="metadata">`
+no mesmo lugar. Vídeo de galeria também não deve tocar sozinho sem controles —
+prefira `controls`, ou deixe curto e mudo como o hero.
 
 | `data-slot` | Onde | Formato sugerido |
 |---|---|---|

@@ -54,15 +54,20 @@
     <!-- ============================================================
          VÍDEO DE FUNDO — descomente e aponte para o arquivo.
          Enquanto não houver vídeo, o fundo de brasa em CSS assume.
+
+         Mantenha o poster: ele aparece antes do vídeo carregar e é o que
+         fica no lugar para quem pediu movimento reduzido no sistema — o
+         script.js pausa o vídeo nesse caso, sem precisar de ajuste aqui.
+
          <video class="hero__video" autoplay muted loop playsinline
-                poster="assets/hero-poster.jpg">
+                preload="metadata" poster="assets/hero-poster.jpg">
            <source src="assets/hero.mp4" type="video/mp4">
          </video>
          ============================================================ -->
     <div class="ember" aria-hidden="true"></div>
 
     <div class="hero__in wrap">
-      <p class="status" id="status" role="status" aria-live="polite">
+      <p class="status" id="status" role="status" aria-live="polite" aria-atomic="true">
         <span class="status__dot" aria-hidden="true"></span>
         <span class="status__text" id="status-texto">Terça a domingo, a partir das 18h</span>
       </p>
