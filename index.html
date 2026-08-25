@@ -1,319 +1,537 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Casa Lenha — cozinha de fogo de lenha</title>
-<meta name="description" content="Um salão de trinta e dois lugares em torno de uma grelha de lenha. Reserve sua mesa.">
-<meta name="theme-color" content="#16110F">
-
-<!-- ============================================================
-     OPEN GRAPH — troque a imagem quando as fotos chegarem
-     ============================================================ -->
-<meta property="og:title" content="Casa Lenha">
-<meta property="og:description" content="Um salão de trinta e dois lugares em torno de uma grelha de lenha.">
-<meta property="og:type" content="restaurant.restaurant">
-<!-- <meta property="og:image" content="assets/og.jpg"> -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Instrument+Sans:ital,wght@0,400..600;1,400&family=DM+Mono:wght@300;400;500&display=swap">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316110F'/%3E%3Ccircle cx='16' cy='19' r='7' fill='%23D2601A'/%3E%3Ccircle cx='16' cy='20' r='3' fill='%23FFD9A0'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLDS Digital — Proposta Comercial</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<!-- ============ SVG ICON SPRITE ============ -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-check" viewBox="0 0 16 16"><path d="M3 8.3l3.3 3.3L13 4.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-design" viewBox="0 0 24 24"><rect x="3" y="3" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="9" y="9" width="12" height="12" rx="2" fill="none" stroke="#886CFF" stroke-width="1.4"/></symbol>
+  <symbol id="icon-tech" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 21h8M12 17v4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+  <symbol id="icon-strategy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" fill="none" stroke="#5C6CFF" stroke-width="1.4"/><path d="M12 2.5v3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M20.5 11.5a8.4 8.4 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.4 8.4 0 01-3.8-.9L3.5 21l1.9-4.7a8.4 8.4 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.4 8.4 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor"/></symbol>
+  <symbol id="icon-email" viewBox="0 0 24 24"><rect x="2" y="4.5" width="20" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M2.5 6l9.5 7 9.5-7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-site" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M3 12h18M12 3c2.8 2.6 4.2 5.7 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-5.7-4.2-9S9.2 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="icon-arrow" viewBox="0 0 16 16"><path d="M4 8h8M8.5 4.5L12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
 
-<header class="topbar">
-  <div class="topbar__in wrap">
-    <!-- ============================================================
-         LOGO — ponto de troca 1 de 2 (o outro está no rodapé).
-         Substitua o <a> inteiro por:
-         <a class="wordmark" href="#"><img src="assets/logo.svg" alt="Casa Lenha" height="28"></a>
-         ============================================================ -->
-    <a class="wordmark" href="#topo" aria-label="Casa Lenha, início">
-      <span class="wordmark__a">Casa</span><span class="wordmark__b">Lenha</span>
-    </a>
+<!-- ==========================================================================
+     PÁGINA 01 — CAPA
+     ========================================================================== -->
+<section class="page">
+  <div class="glow glow-blue" style="width:560px;height:560px;top:-220px;right:-180px;"></div>
+  <div class="glow glow-violet" style="width:440px;height:440px;bottom:-160px;left:-140px;"></div>
 
-    <nav class="nav" aria-label="Seções da página">
-      <a href="#casa">A casa</a>
-      <a href="#fogo">O fogo</a>
-      <a href="#salao">O salão</a>
-      <a href="#visite">Visite</a>
-    </nav>
+  <svg class="connector" style="right:26px; bottom:150px;" width="230" height="190" viewBox="0 0 230 190">
+    <defs><linearGradient id="cg1" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5C6CFF"/><stop offset="1" stop-color="#886CFF"/>
+    </linearGradient></defs>
+    <polyline points="6,178 62,132 116,150 176,54 224,84" fill="none" stroke="url(#cg1)" stroke-width="1" opacity="0.45"/>
+    <circle cx="62" cy="132" r="2.6" fill="#5C6CFF"/>
+    <circle cx="176" cy="54" r="2.6" fill="#886CFF"/>
+    <circle cx="224" cy="84" r="2.2" fill="#5C6CFF"/>
+  </svg>
 
-    <a class="btn btn--solid topbar__cta" href="#visite">Reservar mesa</a>
-  </div>
-</header>
+  <div class="page-inner" style="justify-content:space-between;">
+    <div class="eyebrow"><span class="dot"></span>PROPOSTA COMERCIAL · 2026</div>
 
-<main id="conteudo">
-
-  <!-- ========================== HERO ========================== -->
-  <section class="hero" id="topo">
-    <!-- ============================================================
-         VÍDEO DE FUNDO — descomente e aponte para o arquivo.
-         Enquanto não houver vídeo, o fundo de brasa em CSS assume.
-
-         Mantenha o poster: ele aparece antes do vídeo carregar e é o que
-         fica no lugar para quem pediu movimento reduzido no sistema — o
-         script.js pausa o vídeo nesse caso, sem precisar de ajuste aqui.
-
-         <video class="hero__video" autoplay muted loop playsinline
-                preload="metadata" poster="assets/hero-poster.jpg">
-           <source src="assets/hero.mp4" type="video/mp4">
-         </video>
-         ============================================================ -->
-    <div class="ember" aria-hidden="true"></div>
-
-    <div class="hero__in wrap">
-      <p class="status" id="status" role="status" aria-live="polite" aria-atomic="true">
-        <span class="status__dot" aria-hidden="true"></span>
-        <span class="status__text" id="status-texto">Terça a domingo, a partir das 18h</span>
-      </p>
-
-      <h1 class="hero__title">Tudo aqui<br>passa pelo fogo.</h1>
-
-      <p class="hero__lede">
-        Trinta e dois lugares em volta de uma grelha de lenha que acende às cinco da tarde
-        e só apaga quando a última mesa levanta. Sem pressa e sem pirotecnia: brasa, tempo
-        e uma casa cheia.
-      </p>
-
-      <div class="hero__acts">
-        <a class="btn btn--solid" href="#visite">Reservar mesa</a>
-        <a class="btn btn--ghost" href="#salao">Ver o salão</a>
+    <div style="display:flex; flex-direction:column; gap:26px; margin-top:20px;">
+      <div class="brand-lockup" style="font-size:66px;">
+        <div class="brand-mark">VLDS<span class="chip"></span></div>
+        <div class="brand-sub">DIGITAL</div>
       </div>
+
+      <h1 class="display" style="font-size:48px; max-width:520px; margin-top:14px;">Seu negócio online começa aqui.</h1>
+
+      <p class="lead" style="max-width:420px;">Landing pages modernas para transformar sua presença digital em uma experiência profissional.</p>
     </div>
 
-  </section>
-
-  <!-- ========================== A CASA ========================== -->
-  <section class="section" id="casa">
-    <div class="wrap grid-2">
-      <div class="col-text">
-        <p class="eyebrow">17:00 · o fogo acende</p>
-        <h2 class="h2">Uma cozinha que trabalha em torno de uma coisa só</h2>
-        <p>
-          Duas horas antes de abrir, alguém acende a lenha e não sai de perto. O resto do
-          dia da cozinha se organiza em volta disso: o que entra cedo, o que espera a brasa
-          branca, o que só encosta no calor no fim da noite.
-        </p>
-        <p>
-          Não temos forno combinado nem plano B. Quando o fogo está no ponto errado, a
-          cozinha espera. É mais lento e é o motivo pelo qual você vai lembrar da refeição.
-        </p>
-        <dl class="facts">
-          <div><dt>Lugares</dt><dd>32</dd></div>
-          <div><dt>Desde</dt><dd>2019</dd></div>
-          <div><dt>Lenha</dt><dd>Eucalipto e goiabeira</dd></div>
-        </dl>
-      </div>
-
-      <!-- FOTO — substitua .slot__ph inteiro por <img src="..." alt="..."> -->
-      <figure class="slot slot--tall" data-slot="casa-fogo">
-        <div class="slot__ph" aria-hidden="true">
-          <span class="slot__label">foto · a grelha acesa</span>
-          <span class="slot__spec">vertical · 1200 × 1600</span>
+    <div style="display:flex; flex-direction:column; gap:18px;">
+      <div style="height:1px; background:var(--border);"></div>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+        <div class="micro">WEB DESIGN · TECNOLOGIA · ESTRATÉGIA</div>
+        <div style="text-align:right; display:flex; flex-direction:column; gap:5px;">
+          <div class="small">Preparado para&nbsp; <span style="color:var(--text)">[Nome do Cliente]</span></div>
+          <div class="small">Data&nbsp; <span style="color:var(--text)">25 de agosto de 2026</span></div>
         </div>
-        <figcaption>A grelha por volta das cinco da tarde.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- ========================== O FOGO (assinatura) ========================== -->
-  <section class="section section--fogo" id="fogo">
-    <div class="wrap">
-      <p class="eyebrow">18:30 · a brasa fica branca</p>
-      <h2 class="h2 h2--wide">A altura é o tempero</h2>
-      <p class="lede">
-        Numa cozinha de lenha não existe botão de temperatura. Existe distância. Cada palmo
-        acima da brasa é outro calor, e é assim que a casa decide onde cada coisa cozinha.
-      </p>
-
-      <ol class="ladder">
-        <li class="rung" style="--heat:.06">
-          <span class="rung__bar" aria-hidden="true"></span>
-          <span class="rung__dist">80 cm</span>
-          <span class="rung__temp">90 °C</span>
-          <div class="rung__body">
-            <h3>Defumar e descansar</h3>
-            <p>Quase só fumaça. O andar de cima da grelha guarda o que já está pronto.</p>
-          </div>
-        </li>
-        <li class="rung" style="--heat:.3">
-          <span class="rung__bar" aria-hidden="true"></span>
-          <span class="rung__dist">45 cm</span>
-          <span class="rung__temp">160 °C</span>
-          <div class="rung__body">
-            <h3>Terminar</h3>
-            <p>Calor de paciência, para o que precisa de meia hora e de ninguém olhando com pressa.</p>
-          </div>
-        </li>
-        <li class="rung" style="--heat:.62">
-          <span class="rung__bar" aria-hidden="true"></span>
-          <span class="rung__dist">20 cm</span>
-          <span class="rung__temp">240 °C</span>
-          <div class="rung__body">
-            <h3>Assar</h3>
-            <p>A altura de trabalho da casa. É onde a maior parte da noite acontece.</p>
-          </div>
-        </li>
-        <li class="rung" style="--heat:1">
-          <span class="rung__bar" aria-hidden="true"></span>
-          <span class="rung__dist">5 cm</span>
-          <span class="rung__temp">320 °C</span>
-          <div class="rung__body">
-            <h3>Selar</h3>
-            <p>Calor direto, contato de segundos. Fecha a superfície e devolve fumaça para dentro.</p>
-          </div>
-        </li>
-      </ol>
-
-      <p class="coals">
-        <span class="coals__bar" aria-hidden="true"></span>
-        <span class="coals__lbl">0 cm · a brasa · 620 °C</span>
-      </p>
-    </div>
-  </section>
-
-  <!-- ========================== O SALÃO ========================== -->
-  <section class="section" id="salao">
-    <div class="wrap">
-      <p class="eyebrow">19:00 · a casa abre</p>
-      <h2 class="h2">O salão</h2>
-      <p class="lede lede--short">
-        Uma sala só, sem divisórias. De qualquer mesa dá para ver a brasa e ouvir a cozinha.
-      </p>
-
-      <!-- GALERIA — 4 fotos. Substitua cada .slot__ph por <img src="..." alt="..."> -->
-      <div class="gallery">
-        <figure class="slot slot--a" data-slot="salao-01">
-          <div class="slot__ph" aria-hidden="true">
-            <span class="slot__label">foto · salão da entrada</span>
-            <span class="slot__spec">vertical · 1400 × 1900</span>
-          </div>
-        </figure>
-        <figure class="slot slot--b" data-slot="salao-02">
-          <div class="slot__ph" aria-hidden="true">
-            <span class="slot__label">foto · balcão da brasa</span>
-            <span class="slot__spec">horizontal · 1600 × 1100</span>
-          </div>
-        </figure>
-        <figure class="slot slot--c" data-slot="salao-03">
-          <div class="slot__ph" aria-hidden="true">
-            <span class="slot__label">foto · detalhe / mãos</span>
-            <span class="slot__spec">quadrada · 1200 × 1200</span>
-          </div>
-        </figure>
-        <figure class="slot slot--d" data-slot="salao-04">
-          <div class="slot__ph" aria-hidden="true">
-            <span class="slot__label">vídeo curto · a casa cheia</span>
-            <span class="slot__spec">horizontal · 1920 × 1080 · até 15s, mudo</span>
-          </div>
-        </figure>
       </div>
     </div>
-  </section>
-
-  <!-- ========================== OCASIÕES ========================== -->
-  <section class="section section--quiet" id="ocasioes">
-    <div class="wrap">
-      <p class="eyebrow">21:00 · a casa cheia</p>
-      <h2 class="h2">Como a casa recebe</h2>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Mesa para dois</h3>
-          <p>As quatro mesas do fundo ficam de frente para a grelha. Peça no campo de observações da reserva.</p>
-          <a class="link" href="#visite">Reservar mesa<span aria-hidden="true"> →</span></a>
-        </article>
-        <article class="card">
-          <h3>Mesa grande, até 12</h3>
-          <p>A mesa comprida do centro serve grupos. Reservas de grupo saem por telefone, não pelo formulário.</p>
-          <a class="link" href="tel:+551100000000">Falar com a casa<span aria-hidden="true"> →</span></a>
-        </article>
-        <article class="card">
-          <h3>A casa inteira</h3>
-          <p>Fechamos o salão para eventos às segundas, quando a casa estaria fechada de todo jeito.</p>
-          <a class="link" href="mailto:eventos@casalenha.com.br">Pedir uma proposta<span aria-hidden="true"> →</span></a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================== VISITE ========================== -->
-  <section class="section section--visite" id="visite">
-    <div class="wrap grid-2 grid-2--visite">
-      <div class="col-text">
-        <p class="eyebrow">23:00 · último pedido</p>
-        <h2 class="h2">Visite a casa</h2>
-
-        <table class="hours">
-          <caption class="sr-only">Horários de funcionamento</caption>
-          <tbody>
-            <tr data-dias="1"><th scope="row">Segunda</th><td>Fechado</td></tr>
-            <tr data-dias="2,3,4"><th scope="row">Terça a quinta</th><td>18h — 23h</td></tr>
-            <tr data-dias="5,6"><th scope="row">Sexta e sábado</th><td>18h — 00h30</td></tr>
-            <tr data-dias="0"><th scope="row">Domingo</th><td>12h — 16h</td></tr>
-          </tbody>
-        </table>
-
-        <!-- ============================================================
-             CONTATO — troque endereço, telefone e e-mail reais aqui
-             ============================================================ -->
-        <address class="contact">
-          <p class="contact__addr">
-            Rua da Lenha, 000 — Vila Exemplo<br>
-            São Paulo, SP
-          </p>
-          <ul class="contact__list">
-            <li><a class="link link--quiet" href="tel:+551100000000">(11) 0000-0000</a></li>
-            <li><a class="link link--quiet" href="https://wa.me/5511000000000">WhatsApp da reserva</a></li>
-            <li><a class="link link--quiet" href="mailto:contato@casalenha.com.br">contato@casalenha.com.br</a></li>
-          </ul>
-        </address>
-
-        <a class="btn btn--solid" href="https://wa.me/5511000000000">Reservar mesa</a>
-        <p class="fineprint">Reservas até 12 pessoas pelo WhatsApp. Acima disso, por telefone.</p>
-      </div>
-
-      <!-- MAPA — substitua por um <iframe> do Google Maps ou uma imagem estática -->
-      <figure class="slot slot--map" data-slot="mapa">
-        <div class="slot__ph" aria-hidden="true">
-          <span class="slot__label">mapa · iframe ou imagem</span>
-          <span class="slot__spec">proporção 4:5</span>
-        </div>
-      </figure>
-    </div>
-  </section>
-
-</main>
-
-<footer class="foot">
-  <div class="wrap foot__in">
-    <!-- LOGO — ponto de troca 2 de 2 -->
-    <a class="wordmark wordmark--foot" href="#topo" aria-label="Casa Lenha, voltar ao topo">
-      <span class="wordmark__a">Casa</span><span class="wordmark__b">Lenha</span>
-    </a>
-
-    <nav class="foot__nav" aria-label="Rodapé">
-      <a href="#casa">A casa</a>
-      <a href="#fogo">O fogo</a>
-      <a href="#salao">O salão</a>
-      <a href="#ocasioes">Ocasiões</a>
-      <a href="#visite">Visite</a>
-    </nav>
-
-    <nav class="foot__social" aria-label="Redes sociais">
-      <a href="#">Instagram</a>
-      <a href="#">Google Maps</a>
-    </nav>
-
-    <p class="foot__legal">© <span id="ano">2026</span> Casa Lenha · Rua da Lenha, 000 · São Paulo</p>
   </div>
-</footer>
+</section>
 
-<script src="script.js" defer></script>
+<!-- ==========================================================================
+     PÁGINA 02 — POSICIONAMENTO
+     ========================================================================== -->
+<section class="page">
+  <div class="glow glow-blue" style="width:320px;height:320px;top:-120px;left:60%;"></div>
+  <div class="page-inner">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div class="eyebrow"><span class="dot"></span>POSICIONAMENTO</div>
+      <div class="ghost-number">01</div>
+    </div>
+
+    <div style="margin-top:2px; max-width:580px;">
+      <h1 class="h1">Sua presença digital também comunica o valor do seu negócio.</h1>
+    </div>
+
+    <div style="margin-top:24px; max-width:440px; display:flex; flex-direction:column; gap:14px;">
+      <p class="lead">Hoje, antes mesmo de entrar em contato, muitos clientes pesquisam uma empresa, profissional ou serviço online.</p>
+      <p class="lead">Uma presença digital bem construída ajuda sua marca a transmitir mais confiança, organização e profissionalismo desde o primeiro contato.</p>
+    </div>
+
+    <div style="margin-top:46px; padding-top:34px; border-top:1px solid var(--border);">
+      <h2 class="display" style="font-size:32px; max-width:480px;">Não criamos apenas páginas.</h2>
+      <p class="lead" style="margin-top:14px; max-width:460px;">Criamos experiências digitais pensadas para apresentar seu negócio de forma profissional e transformar visitantes em contatos.</p>
+    </div>
+
+    <div class="pillars" style="margin-top:auto; padding-top:36px; padding-bottom:8px;">
+      <div class="pillar">
+        <svg class="icon"><use href="#icon-design"/></svg>
+        <div class="label">DESIGN</div>
+        <p>Visual moderno e alinhado ao seu negócio.</p>
+      </div>
+      <div class="pillar">
+        <svg class="icon"><use href="#icon-tech"/></svg>
+        <div class="label">TECNOLOGIA</div>
+        <p>Páginas rápidas, responsivas e preparadas para diferentes dispositivos.</p>
+      </div>
+      <div class="pillar">
+        <svg class="icon"><use href="#icon-strategy"/></svg>
+        <div class="label">ESTRATÉGIA</div>
+        <p>Estrutura pensada para levar o visitante até o contato.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-rule"></div>
+  <div class="footer-bar"><div class="footer-left">VLDS DIGITAL — PROPOSTA COMERCIAL</div><div class="footer-right"><b>02</b> / 09</div></div>
+</section>
+
+<!-- ==========================================================================
+     PÁGINA 03 — O QUE ENTREGAMOS
+     ========================================================================== -->
+<section class="page">
+  <div class="page-inner">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div class="eyebrow"><span class="dot"></span>O QUE ENTREGAMOS</div>
+      <div class="ghost-number">02</div>
+    </div>
+
+    <div style="margin-top:2px; max-width:580px;">
+      <h1 class="h1">Tudo que sua empresa precisa para começar bem online.</h1>
+    </div>
+
+    <div class="deliver-grid" style="margin-top:44px;">
+      <div class="deliver-item">
+        <div class="num">01</div>
+        <div><div class="title">Design personalizado</div><p>Cada projeto é desenvolvido de acordo com a identidade e objetivo do negócio.</p></div>
+      </div>
+      <div class="deliver-item">
+        <div class="num">02</div>
+        <div><div class="title">Responsivo</div><p>Experiência otimizada para celular, tablet e computador.</p></div>
+      </div>
+      <div class="deliver-item">
+        <div class="num">03</div>
+        <div><div class="title">WhatsApp integrado</div><p>Chamadas estratégicas facilitando o contato dos visitantes.</p></div>
+      </div>
+      <div class="deliver-item">
+        <div class="num">04</div>
+        <div><div class="title">SEO básico</div><p>Configurações essenciais para mecanismos de pesquisa.</p></div>
+      </div>
+      <div class="deliver-item">
+        <div class="num">05</div>
+        <div><div class="title">Domínio</div><p>Auxílio na configuração e publicação do domínio.</p></div>
+      </div>
+      <div class="deliver-item">
+        <div class="num">06</div>
+        <div><div class="title">Publicação</div><p>Projeto entregue pronto e disponível online.</p></div>
+      </div>
+      <div class="deliver-item">
+        <div class="num">07</div>
+        <div><div class="title">Performance</div><p>Estrutura otimizada para carregamento rápido.</p></div>
+      </div>
+      <div class="deliver-item" style="border-bottom:1px solid var(--border);">
+        <div class="num">08</div>
+        <div><div class="title">Acompanhamento</div><p>Processo simples desde o briefing até a publicação.</p></div>
+      </div>
+    </div>
+
+    <div style="margin-top:auto; display:flex; justify-content:flex-end;">
+      <div class="micro">WEB DESIGN</div>
+    </div>
+  </div>
+  <div class="footer-rule"></div>
+  <div class="footer-bar"><div class="footer-left">VLDS DIGITAL — PROPOSTA COMERCIAL</div><div class="footer-right"><b>03</b> / 09</div></div>
+</section>
+
+<!-- ==========================================================================
+     PÁGINA 04 — PLANOS
+     ========================================================================== -->
+<section class="page">
+  <div class="page-inner">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div class="eyebrow"><span class="dot"></span>PLANOS</div>
+      <div class="ghost-number">03</div>
+    </div>
+
+    <div style="margin-top:2px; max-width:580px; margin-bottom:30px;">
+      <h1 class="h1">Escolha o nível ideal para o seu negócio.</h1>
+    </div>
+
+    <div class="plans">
+
+      <!-- LANDING PAGE -->
+      <div class="plan-card">
+        <div class="plan-left">
+          <div class="plan-name">Landing Page</div>
+          <div class="plan-price">R$ 400</div>
+          <p class="plan-desc">Para profissionais e pequenos negócios que precisam estabelecer uma presença digital profissional.</p>
+          <div class="plan-term"><span class="t-label">Prazo</span><span class="t-value">Até 2 dias úteis</span></div>
+        </div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Página única</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Design moderno</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Responsividade</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Apresentação do negócio</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Serviços</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>WhatsApp</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Instagram</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Informações de contato</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Localização quando necessário</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>SEO básico</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Configuração e publicação</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Configuração de domínio</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Até 2 rodadas de alterações</li>
+        </ul>
+      </div>
+
+      <!-- LANDING PAGE PROFISSIONAL -->
+      <div class="plan-card featured">
+        <div class="badge">MAIS ESCOLHIDA</div>
+        <div class="plan-left">
+          <div class="plan-name">Profissional</div>
+          <div class="plan-price">R$ 600</div>
+          <p class="plan-desc">Para empresas que querem uma presença digital mais completa e estratégica.</p>
+          <div class="plan-term"><span class="t-label">Prazo</span><span class="t-value">Até 7 dias úteis</span></div>
+        </div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="inherits">Tudo da Landing Page, mais:</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Estrutura personalizada</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Copy estratégica</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Maior personalização visual</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Animações e interações modernas</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Diferenciais</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Depoimentos</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Perguntas frequentes</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>CTAs estratégicos</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Formulário quando necessário</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Google Maps</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Otimização de performance</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>SEO estruturado</li>
+        </ul>
+      </div>
+
+      <!-- LANDING PAGE PREMIUM -->
+      <div class="plan-card">
+        <div class="plan-left">
+          <div class="plan-name">Premium</div>
+          <div class="plan-price">R$ 800</div>
+          <p class="plan-desc">Para negócios que buscam maior nível de personalização e experiência visual.</p>
+          <div class="plan-term"><span class="t-label">Prazo</span><span class="t-value">Até 7 dias úteis</span></div>
+        </div>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li class="inherits">Tudo da Profissional, mais:</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Projeto visual exclusivo</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Experiência premium</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Animações avançadas</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Seções sob medida para o negócio</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Estrutura focada em conversão</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Copy completa</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Otimização dos materiais enviados</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Estratégia de chamadas para WhatsApp</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Configurações técnicas de SEO</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Google Analytics quando necessário</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Configuração de domínio e publicação</li>
+          <li><svg class="check-icon"><use href="#icon-check"/></svg>Revisão completa antes do lançamento</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-rule"></div>
+  <div class="footer-bar"><div class="footer-left">VLDS DIGITAL — PROPOSTA COMERCIAL</div><div class="footer-right"><b>04</b> / 09</div></div>
+</section>
+
+<!-- ==========================================================================
+     PÁGINA 05 — COMPARATIVO
+     ========================================================================== -->
+<section class="page">
+  <div class="page-inner">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div class="eyebrow"><span class="dot"></span>COMPARATIVO</div>
+      <div class="ghost-number">04</div>
+    </div>
+
+    <div style="margin-top:2px; max-width:580px; margin-bottom:30px;">
+      <h1 class="h1">Compare as possibilidades.</h1>
+    </div>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="col">Landing&nbsp;Page</th>
+          <th class="col featured">Profissional</th>
+          <th class="col">Premium</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Design personalizado</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Responsividade</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>WhatsApp</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>SEO básico</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Domínio e publicação</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Estrutura personalizada</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Copy estratégica</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Animações</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Depoimentos</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>FAQ</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Google Maps</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Performance otimizada</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Projeto visual exclusivo</td><td class="col no">—</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Animações avançadas</td><td class="col no">—</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Copy completa</td><td class="col no">—</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Estrutura focada em conversão</td><td class="col no">—</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+        <tr><td>Google Analytics</td><td class="col no">—</td><td class="col no">—</td><td class="col"><svg class="yes"><use href="#icon-check"/></svg></td></tr>
+      </tbody>
+    </table>
+
+    <div class="price-recap">
+      <div class="item"><div class="plabel">Landing Page</div><div class="pvalue">R$ 400</div></div>
+      <div class="item"><div class="plabel">Profissional</div><div class="pvalue">R$ 600</div></div>
+      <div class="item"><div class="plabel">Premium</div><div class="pvalue">R$ 800</div></div>
+    </div>
+  </div>
+  <div class="footer-rule"></div>
+  <div class="footer-bar"><div class="footer-left">VLDS DIGITAL — PROPOSTA COMERCIAL</div><div class="footer-right"><b>05</b> / 09</div></div>
+</section>
+
+<!-- ==========================================================================
+     PÁGINA 06 — PROCESSO
+     ========================================================================== -->
+<section class="page">
+  <div class="page-inner">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div class="eyebrow"><span class="dot"></span>PROCESSO</div>
+      <div class="ghost-number">05</div>
+    </div>
+
+    <div style="margin-top:2px; max-width:580px; margin-bottom:40px;">
+      <h1 class="h1">Do briefing à publicação.</h1>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-step"><div class="tl-line"><span class="tl-num">01</span></div><div class="tl-title">Briefing</div><p>Conhecemos sua empresa, seus serviços e seus objetivos.</p></div>
+      <div class="tl-step"><div class="tl-line"><span class="tl-num">02</span></div><div class="tl-title">Materiais</div><p>Recebemos as informações, logo, imagens e conteúdos necessários.</p></div>
+      <div class="tl-step"><div class="tl-line"><span class="tl-num">03</span></div><div class="tl-title">Criação</div><p>Desenvolvemos a estrutura, o design e a experiência da página.</p></div>
+      <div class="tl-step active"><div class="tl-line"><span class="tl-num">04</span></div><div class="tl-title">Apresentação</div><p>Você recebe o projeto para analisar antes de realizar qualquer pagamento.</p></div>
+      <div class="tl-step"><div class="tl-line"><span class="tl-num">05</span></div><div class="tl-title">Ajustes</div><p>Realizamos as alterações previstas no serviço contratado.</p></div>
+      <div class="tl-step"><div class="tl-line"><span class="tl-num">06</span></div><div class="tl-title">Aprovação</div><p>Você confirma que o projeto está de acordo com o esperado.</p></div>
+      <div class="tl-step active"><div class="tl-line"><span class="tl-num">07</span></div><div class="tl-title">Pagamento</div><p>O pagamento acontece somente após sua aprovação.</p></div>
+      <div class="tl-step"><div class="tl-line"><span class="tl-num">08</span></div><div class="tl-title">Publicação</div><p>Seu projeto é publicado e entregue.</p></div>
+    </div>
+
+    <div class="statement-block">
+      <div class="display">Você aprova primeiro.<span class="accent-text">Paga depois.</span></div>
+      <p class="small" style="margin-top:18px;">O pagamento é solicitado somente depois que o projeto está pronto e aprovado por você.</p>
+    </div>
+  </div>
+  <div style="position:absolute; top:28mm; right:20mm; z-index:2;" class="micro">DIGITAL EXPERIENCE</div>
+  <div class="footer-rule"></div>
+  <div class="footer-bar"><div class="footer-left">VLDS DIGITAL — PROPOSTA COMERCIAL</div><div class="footer-right"><b>06</b> / 09</div></div>
+</section>
+
+<!-- ==========================================================================
+     PÁGINA 07 — CONDIÇÕES
+     ========================================================================== -->
+<section class="page">
+  <div class="page-inner">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div class="eyebrow"><span class="dot"></span>CONDIÇÕES</div>
+      <div class="ghost-number">06</div>
+    </div>
+
+    <div style="margin-top:2px; max-width:580px; margin-bottom:34px;">
+      <h1 class="h1">Simples, transparente e sem complicação.</h1>
+    </div>
+
+    <div class="cond-grid" style="margin-top:auto; margin-bottom:auto;">
+      <div class="cond-card card">
+        <div class="label">Pagamento</div>
+        <div class="headline">Somente após aprovação.</div>
+        <p>Não é necessário pagamento inicial. O pagamento do projeto é realizado somente após a apresentação, os ajustes previstos e a aprovação pelo cliente.</p>
+      </div>
+
+      <div class="cond-card card">
+        <div class="label">Prazo</div>
+        <div class="headline">Rápido e previsível.</div>
+        <div class="sub-row">
+          <div><span class="k">Landing Page</span><span class="v">2 dias úteis</span></div>
+          <div><span class="k">Profissional / Premium</span><span class="v">7 dias úteis</span></div>
+        </div>
+        <p>O prazo começa a contar após o recebimento dos materiais necessários.</p>
+      </div>
+
+      <div class="cond-card card">
+        <div class="label">Alterações</div>
+        <div class="headline">2 rodadas incluídas.</div>
+        <p>Até 2 rodadas de alterações estão incluídas no projeto. Alterações adicionais podem ser contratadas separadamente.</p>
+      </div>
+
+      <div class="cond-card card">
+        <div class="label">Domínio</div>
+        <div class="headline">Em nome do cliente.</div>
+        <p>O domínio deve ser preferencialmente registrado em nome do cliente. Custos de aquisição ou renovação são informados separadamente.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-rule"></div>
+  <div class="footer-bar"><div class="footer-left">VLDS DIGITAL — PROPOSTA COMERCIAL</div><div class="footer-right"><b>07</b> / 09</div></div>
+</section>
+
+<!-- ==========================================================================
+     PÁGINA 08 — SERVIÇOS ADICIONAIS
+     ========================================================================== -->
+<section class="page">
+  <div class="glow glow-violet" style="width:300px;height:300px;bottom:-100px;right:-80px;"></div>
+  <div class="page-inner">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div class="eyebrow"><span class="dot"></span>SERVIÇOS ADICIONAIS</div>
+      <div class="ghost-number">07</div>
+    </div>
+
+    <div style="margin-top:2px; max-width:580px; margin-bottom:12px;">
+      <h1 class="h1">Personalize seu projeto.</h1>
+    </div>
+    <p class="lead" style="margin-bottom:40px;">Itens avulsos para complementar o plano contratado, conforme a necessidade do seu negócio.</p>
+
+    <div class="addons">
+      <div class="addon-card card">
+        <div class="micro" style="color:var(--text-faint);">01</div>
+        <div class="a-label">Página adicional</div>
+        <div class="a-rule"></div>
+        <div class="a-price">R$ 100</div>
+      </div>
+      <div class="addon-card card">
+        <div class="micro" style="color:var(--text-faint);">02</div>
+        <div class="a-label">Alterações adicionais</div>
+        <div class="a-rule"></div>
+        <div class="a-price">R$ 50</div>
+      </div>
+      <div class="addon-card card">
+        <div class="micro" style="color:var(--text-faint);">03</div>
+        <div class="a-label">Seção adicional</div>
+        <div class="a-rule"></div>
+        <div class="a-price">R$ 50</div>
+      </div>
+      <div class="addon-card card">
+        <div class="micro" style="color:var(--text-faint);">04</div>
+        <div class="a-label">Configuração de domínio externo</div>
+        <div class="a-rule"></div>
+        <div class="a-price">R$ 50</div>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <p>Outras integrações, manutenções, redesigns ou projetos personalizados podem ser avaliados separadamente.</p>
+    </div>
+
+    <div style="margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end;">
+      <div class="micro">RESPONSIVE DEVELOPMENT</div>
+      <svg width="150" height="60" viewBox="0 0 150 60" style="opacity:.5;">
+        <defs><linearGradient id="cg2" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#5C6CFF"/><stop offset="1" stop-color="#886CFF"/>
+        </linearGradient></defs>
+        <polyline points="0,50 40,20 78,34 118,8 150,22" fill="none" stroke="url(#cg2)" stroke-width="1"/>
+        <circle cx="40" cy="20" r="2.4" fill="#5C6CFF"/>
+        <circle cx="118" cy="8" r="2.4" fill="#886CFF"/>
+      </svg>
+    </div>
+  </div>
+  <div class="footer-rule"></div>
+  <div class="footer-bar"><div class="footer-left">VLDS DIGITAL — PROPOSTA COMERCIAL</div><div class="footer-right"><b>08</b> / 09</div></div>
+</section>
+
+<!-- ==========================================================================
+     PÁGINA 09 — ENCERRAMENTO
+     ========================================================================== -->
+<section class="page">
+  <div class="glow glow-blue" style="width:520px;height:520px;top:-200px;left:-160px;"></div>
+  <div class="glow glow-violet" style="width:420px;height:420px;bottom:-160px;right:-140px;"></div>
+
+  <svg class="connector" style="left:24px; top:150px;" width="220" height="180" viewBox="0 0 220 180">
+    <defs><linearGradient id="cg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#886CFF"/><stop offset="1" stop-color="#5C6CFF"/>
+    </linearGradient></defs>
+    <polyline points="4,10 56,46 100,30 158,96 216,72" fill="none" stroke="url(#cg3)" stroke-width="1" opacity="0.4"/>
+    <circle cx="56" cy="46" r="2.6" fill="#886CFF"/>
+    <circle cx="158" cy="96" r="2.6" fill="#5C6CFF"/>
+  </svg>
+
+  <div style="position:absolute; top:28mm; right:20mm; z-index:2;" class="micro">ONLINE PRESENCE</div>
+
+  <div class="page-inner" style="justify-content:center; align-items:center; text-align:center;">
+    <div class="eyebrow"><span class="dot"></span>VLDS DIGITAL</div>
+
+    <h1 class="display" style="font-size:42px; max-width:560px; margin-top:26px;">Seu próximo cliente pode estar procurando por você agora.</h1>
+
+    <p class="lead" style="max-width:420px; margin:20px auto 0; text-align:center;">Construa uma presença digital que represente o nível do seu trabalho.</p>
+
+    <h2 class="h2" style="margin-top:38px;">Vamos colocar seu negócio online?</h2>
+
+    <div class="cta-btn" style="margin:22px auto 0;">FALAR COM A VLDS <svg width="14" height="14"><use href="#icon-arrow"/></svg></div>
+
+    <div class="contact-row" style="max-width:560px; margin-left:auto; margin-right:auto; text-align:left;">
+      <div class="contact-item">
+        <svg class="icon"><use href="#icon-whatsapp"/></svg>
+        <div class="c-label">WhatsApp</div>
+        <div class="c-value placeholder">[Inserir número]</div>
+      </div>
+      <div class="contact-item">
+        <svg class="icon"><use href="#icon-instagram"/></svg>
+        <div class="c-label">Instagram</div>
+        <div class="c-value placeholder">[Inserir Instagram]</div>
+      </div>
+      <div class="contact-item">
+        <svg class="icon"><use href="#icon-email"/></svg>
+        <div class="c-label">E-mail</div>
+        <div class="c-value placeholder">[Inserir e-mail]</div>
+      </div>
+      <div class="contact-item">
+        <svg class="icon"><use href="#icon-site"/></svg>
+        <div class="c-label">Site</div>
+        <div class="c-value placeholder">[Inserir site]</div>
+      </div>
+    </div>
+
+    <div style="margin-top:64px; display:flex; flex-direction:column; align-items:center; gap:10px;">
+      <div class="brand-lockup" style="font-size:26px;">
+        <div class="brand-mark">VLDS<span class="chip"></span></div>
+        <div class="brand-sub">DIGITAL</div>
+      </div>
+      <div class="small" style="margin-top:6px;">Seu negócio online começa aqui.</div>
+      <div class="micro" style="margin-top:10px;">09 / 09</div>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
